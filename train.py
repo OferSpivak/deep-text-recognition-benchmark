@@ -143,6 +143,7 @@ def train(opt):
     iteration = start_iter
 
     while(True):
+        print(f'in tarin.py white true loop, iteration: {iteration}')
         # train part
         image_tensors, labels = train_dataset.get_batch()
         image = image_tensors.to(device)
